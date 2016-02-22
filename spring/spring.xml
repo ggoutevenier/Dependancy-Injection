@@ -1,0 +1,18 @@
+<beans>
+	<bean id="JoeAddress" library="C:\Users\Gerard\workspace\library\Debug\library.dll" maker="makeAddress">
+		<properties>
+			<property name="street" value="1 Main St"/>
+			<property name="city" value="Any Town"/>
+			<property name="state" value="NY"/>
+			<property name="zip" value="12345"/>
+		</properties>
+	</bean>
+	<bean id="Joe" library="C:\Users\Gerard\workspace\library\Debug\library.dll" maker="makePerson">
+		<properties>
+			<property name="first_name" value="Joe"/>
+			<property name="last_name" value="Smith"/>
+			<property name="age" value="22"/>
+			<property name="addr" ref="JoeAddress"/>
+		</properties>
+	</bean>
+</beans>
